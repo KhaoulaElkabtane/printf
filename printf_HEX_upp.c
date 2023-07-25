@@ -8,7 +8,7 @@
  * Return: The number of hexadecimal digits printed.
  */
 
-int printf_HEX_upp(va_list args)
+int print_HEX_upp(va_list args)
 {
 	unsigned int arg;
 	char d;
