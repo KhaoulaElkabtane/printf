@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * printf_HEX_upp - Printf the uppercase hexadecimal representation
- *                 of an unsigned integer.
+ * print_HEX_upp - Print the uppercase hexadecimal representation
+ * of an unsigned integer.
  * @args: The va_list that contains the unsigned integer to be printed.
  *
  * Return: The number of hexadecimal digits printed.
