@@ -31,4 +31,15 @@ int print_str(va_list args);
 int _strlen(char *s);
 int print_char(va_list args);
 int print_percent_37(void);
+int print_nmb(va_list args);
+int print_bin(va_list args);
+int print_unsigned_int(va_list args);
+int print_octa(va_list args);
+int print_hex_low(va_list args);
+int print_HEX_upp(va_list args);
+int S_conversion(va_list args);
+int print_address(va_list args);
+int print_str_reverso(va_list args);
+int print_rot13(va_list args);
+int print_hex_long(unsigned long int n);
 #endif
