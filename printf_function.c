@@ -11,12 +11,12 @@
 int _printf(const char *format, ...)
 {
 	match_specifier x[] = {
-		{"%s", print_str}, {"%c", print_char}, {"%%", print_percent_37}
-	};
-	int i = 0;
-	int j;
-	int count = 0;
-	int matching;
+		{"%s", print_str}, {"%c", print_char}, {"%%", print_percent_37},
+		{"%i", print_nmb}, {"%d", print_nmb}, {"%b", print_bin},
+		{"%u", print_unsigned_int}, {"%o", print_octa}, {"%x", print_hex_low},
+		{"%X", print_HEX_upp}, {"%S", S_conversion}, {"%p", print_address},
+		{"%r", print_str_reverso}, {"%R", print_rot13}};
+	int i = 0, j, count = 0, matching;
 	const char *s;
 
 	va_list(args);
