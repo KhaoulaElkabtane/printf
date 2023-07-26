@@ -9,6 +9,15 @@
 #include <limits.h>
 #include <math.h>
 
+#define ERROR -1
+
+/* PRINTF FLAGS */
+#define MINUS 1
+#define PLUS 2
+#define ZERO 4
+#define HASH 8
+#define SPACE 16
+
 /**
  * struct format - struct for storing conversion specifiers and functions
  * @f: pointer to corresponding conversion function
@@ -42,4 +51,10 @@ int print_address(va_list args);
 int print_str_reverso(va_list args);
 int print_rot13(va_list args);
 int print_hex_long(unsigned long int n);
+int get_flags(const char *format, int *i);
+int _puts(char *str);
+int _strlenc(const char *s);
+void _itoa(long n, char s[]);
+int to_base_num(unsigned long num, int base, char buffer[]);
+void reverse_str(char s[]);
 #endif
