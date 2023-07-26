@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 		{"%i", print_nmb}, {"%d", print_nmb}, {"%b", print_bin},
 		{"%u", print_unsigned_int}, {"%o", print_octa}, {"%x", print_hex_low},
 		{"%X", print_HEX_upp}, {"%S", S_conversion}, {"%p", print_address},
-		/**{"%r", print_str_reverso}, {"%R", print_rot13}*/};
+		{"%r", print_str_reverso}, {"%R", print_rot13}};
 	int i = 0, j, count = 0, matching;
 	const char *s;
 
